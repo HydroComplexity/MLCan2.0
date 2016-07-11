@@ -1,0 +1,56 @@
+function [remain, Hl, LEl, G1, ra, LWups] = SEB_Remainder_snow(Tli, Tsl, Tlprev, VHC_SL, dtime,...
+                                   Rabs, dH, Ta1, ea1, pa, U1, z1,...
+                                   vonk, z0, epss, c1, thetatr, psill, bl,...
+                                   bdl, rhowater, zsl, TK_sl, volliql,...
+                                   rho_dry_air, cp, Lv, Lf, boltz, Vw, R, mmH2OtoMPa, thetamin, case1sl)
+
+                              
+                              
+% Solve surface energy balance based on formulation of (Hinzman et al, JGR 1998)
+%   --> Equation #s refer to Hinzman
+%
+%   INPUTS:
+%       Ts = soil surface temp [C]
+%       Rabs = absorbed radiation by soil [W/m^2]
+%       Ta1 = air temperature at surface [C]
+%       ea1 = vapor pressure at surface [kPa]
+%       pa = air pressure at surface [kPa]
+%       U1 = wind speed at surface [m/s]
+%       z1 = height of bottom atmosphere node [m]
+%       dzs1 = thickness of top soil layer [m]
+%       psis1_MPa = soil water potential of top layer [MPa] --> 1MPa = 1J/g
+%       vonk = von Karman constant
+%       z0 = surface roughness length
+%       TC1 = thermal conductivity of top soil layer 
+
+
+% Soil Surface Energy Balance
+    rhoa = rho_dry_air  * 1000 / 28.97; % from [kg/m3] to [mol/m^3]    
+    Ls = Lv + Lf;
+
+    % COMPUTATION OF LATENT HEAT FROM LITTER
+    % compute aerodynamic resistance 
+    ra = ((log(z1/z0))^2)/(U1*vonk^2); %  D = U1*vonk^2 / (log(z1/z0))^2;
+    % Compute saturated pressure at the litter temperature
+    esatTl = 0.611*exp(17.502*Tli/(Tli+240.97));
+    %compute LE
+        LEl = (Ls*rhoa*(0.622/pa)*(esatTl - ea1))/(ra);   
+        if (volliql < thetamin && LEl > 0)
+            LEl=0;        
+        end
+    % COMPUTATION OF SENSIBLE HEAT FROM LITTER
+    Hl = cp*rhoa*(Tli-Ta1)/ra;    
+    
+    % COMPUTATION OF HEAT INTO THE LITTER
+    G1 = (TK_sl)*(Tli - Tsl)/((zsl)/2);
+    
+    % COMPUTATION OF STORAGE TERM
+    dS = (VHC_SL*(Tli-Tlprev)/dtime)*zsl;
+    
+    % COMPUTE REMAIN        
+    
+    LWups = epss*boltz*(Tli+273.15)^4;
+    remain = Rabs - Hl - LEl - G1 - LWups - dH - dS;  
+ %    remain = Rnrad_soil - Hs - LEs - Gs;  
+ 
+ 

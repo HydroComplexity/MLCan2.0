@@ -1,0 +1,47 @@
+
+
+Ph_shade = NaN(nl_can, nspecies);
+An_shade = NaN(nl_can, nspecies);
+Ci_shade = NaN(nl_can, nspecies);
+gsv_shade = NaN(nl_can, nspecies);
+Tl_shade = NaN(nl_can, nspecies);
+LE_shade = NaN(nl_can, nspecies); 
+TR_shade = NaN(nl_can, nspecies); 
+Evap_shade = NaN(nl_can, nspecies);
+H_shade = NaN(nl_can, nspecies);
+psil_shade = NaN(nl_can, nspecies);
+fsv_shade = NaN(nl_can, nspecies); 
+Ch2o_shade = NaN(nl_can, nspecies); 
+gbv_shade = NaN(nl_can, nspecies);
+gbh_shade = NaN(nl_can, nspecies);
+Ph_limit_shade = NaN(nl_can, nspecies);
+Jc_C3_shade = NaN(nl_can, nspecies);
+Jj_C3_shade =NaN(nl_can, nspecies);
+Js_C3_shade = NaN(nl_can, nspecies);
+Jc_C4_shade = NaN(nl_can, nspecies);
+Jj_C4_shade = NaN(nl_can, nspecies);
+Js_C4_shade = NaN(nl_can, nspecies);
+LSshaCON = NaN(1,nspecies);
+
+Ph_sun = NaN(nl_can, nspecies);
+An_sun = NaN(nl_can, nspecies);
+Ci_sun = NaN(nl_can, nspecies);
+gsv_sun = NaN(nl_can, nspecies);
+Tl_sun = NaN(nl_can, nspecies);
+LE_sun = NaN(nl_can, nspecies); 
+TR_sun = NaN(nl_can, nspecies); 
+Evap_sun = NaN(nl_can, nspecies);
+H_sun = NaN(nl_can, nspecies);
+psil_sun = NaN(nl_can, nspecies);
+fsv_sun = NaN(nl_can, nspecies); 
+Ch2o_sun = NaN(nl_can, nspecies); 
+gbv_sun = NaN(nl_can, nspecies);
+gbh_sun = NaN(nl_can, nspecies);
+Ph_limit_sun = NaN(nl_can, nspecies);
+Jc_C3_sun = NaN(nl_can, nspecies);
+Jj_C3_sun =NaN(nl_can, nspecies);
+Js_C3_sun = NaN(nl_can, nspecies);
+Jc_C4_sun = NaN(nl_can, nspecies);
+Jj_C4_sun = NaN(nl_can, nspecies);
+Js_C4_sun = NaN(nl_can, nspecies);
+LSsunCON = NaN(1,nspecies);
