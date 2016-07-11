@@ -1,0 +1,18 @@
+MLCanFace (Version 2.0)
+
+The Windows version of the model is also fully exposed through the collaborative environment under MLCanFace_Windows 
+[https://github.com/HydroComplexity/MLCan2.0]
+
+
+To run the code perform the following steps:
+   	
+1. Open Matlab
+
+2a. In the command window, type "guide". Then browse to the MLCanFace_xxx. Select main_MLCan.fig. 
+Click the green arrow on the toolbar to run. Or
+
+2b. Go to the MLCanFace model in Matlab, simply right-click on main_MLCan.m file, select "Run File".
+
+(Remember to create your working folders inside the MLCanFace_xxx folder)
+
+[Please read the "About" page from the Help Menu on important details regarding use and citation of the model].
