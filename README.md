@@ -14,10 +14,7 @@ Matlab
 
 1. Open Matlab
 
-2. (a) In the command window, type "guide". Then browse to the MLCanFace_xxx. Select main_MLCan.fig
-Click the green arrow on the toolbar to run. Or
-
-2. (b) Go to the MLCanFace model in Matlab, simply right-click on main_MLCan.m file, select "Run File"
+2. Go to the MLCanFace model in Matlab, simply right-click on main_MLCan.m file, select "Run File"
 
 (Remember to create your working folders inside the MLCanFace_xxx folder)
 
