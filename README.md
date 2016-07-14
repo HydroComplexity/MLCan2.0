@@ -1,40 +1,33 @@
-GPU-based Conjunctive Surface Sub-surface Flow Model v1.0
+### Model description
+MLCanFace (Version 2.0)
+The Windows version of the model is also fully exposed through the collaborative environment under MLCanFace_Windows 
 
-This is an open source, GPU-based program for modeling conjunctive 2D surface and 3D sub-surface flow. The model is written in CUDA C++ and has been tested under GNU/Linux.
 
 ### Documentation
-Under review for publication
+Book captors in preparation
 
 
-### Installation
-Prerequisites
-```
-NetCDF 4.0 or newer
-CUDA 5.0 or newer
-g++ 4.2 or newer
-```
-
-To build
-```
-$ make build
-$ make
-```
+### Software required
+Matlab
 
 
 ### Run  
-```
-$ cd bin
-$ ./gcsflow ../Test_Cases/path_to_test/config_filename.cfg
-```
-Edit Makefile to change the compiling options.  
-Model options and parameters are in configuration files.
+1. Open Matlab
+
+2a. In the command window, type "guide". Then browse to the MLCanFace_xxx. Select main_MLCan.fig
+Click the green arrow on the toolbar to run. Or
+2b. Go to the MLCanFace model in Matlab, simply right-click on main_MLCan.m file, select "Run File"
+
+(Remember to create your working folders inside the MLCanFace_xxx folder)
+[Please read the "About" page from the Help Menu on important details regarding use and citation of the model]
+
 
 ### License
-This software is freeware and is released under LGPL. See LICENSE file for more information. 
+At present this code is made available for educational use, and for research only under a collaborative agreement
 
 
 ### Contact Authors
-* Phong Le: <mailto:levuvietphong@gmail.com>
+* Dongkook Woo: <mailto:dongkook.woo@gmail.com>
 * Praveen Kumar: <mailto:kumar1@illinois.edu>
 
 Questions and suggestions are welcome.
