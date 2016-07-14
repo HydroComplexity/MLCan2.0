@@ -1,6 +1,5 @@
 ### Model description
-MLCanFace (Version 2.0)
-The Windows version of the model is also fully exposed through the collaborative environment under MLCanFace_Windows 
+MLCanFace (Version 2.0): The Windows version of the model is also fully exposed through the collaborative environment under MLCanFace_Windows 
 
 
 ### Documentation
@@ -11,14 +10,17 @@ Book captors in preparation
 Matlab
 
 
-### Run  
+### Run
+
 1. Open Matlab
 
 2a. In the command window, type "guide". Then browse to the MLCanFace_xxx. Select main_MLCan.fig
 Click the green arrow on the toolbar to run. Or
+
 2b. Go to the MLCanFace model in Matlab, simply right-click on main_MLCan.m file, select "Run File"
 
 (Remember to create your working folders inside the MLCanFace_xxx folder)
+
 [Please read the "About" page from the Help Menu on important details regarding use and citation of the model]
 
 
@@ -27,7 +29,7 @@ At present this code is made available for educational use, and for research onl
 
 
 ### Contact Authors
-* Dongkook Woo: <mailto:dongkook.woo@gmail.com>
+* Dong Kook Woo: <mailto:dongkook.woo@gmail.com>
 * Praveen Kumar: <mailto:kumar1@illinois.edu>
 
 Questions and suggestions are welcome.
