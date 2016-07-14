@@ -132,6 +132,16 @@ VARIABLES.CANOPY.Tl_prev_dt = Ta_in(1) * ones(nl_can,1);
 VARIABLES.SOIL.volliq = volliqinit;
 VARIABLES.SOIL.smp = VERTSTRUC.psi0 .* (VARIABLES.SOIL.volliq ./ VERTSTRUC.porsl).^(-VERTSTRUC.bsw);
 
+% Message box for soil moisture
+if sum(volliqinit>=porsl) > 0
+    msgbox({'Initial soil moisture is higher than saturated soil moisture!', 'Solution: Modify initilal soil moisture or Increase % of sand.'},'error');
+    break;
+end
+if sum(volliqinit<=theta_dry) > 0
+    msgbox({'Initial soil moisture is lower than residual soil moisture!', 'Solution: Modify initilal soil moisture or Increase % of sand.'},'error');
+    break;
+end
+
 % Initialize snow moisture variables
 VARIABLES.SOIL.voltotsn = 1;
 VARIABLES.SOIL.voltotli = 1;
@@ -153,6 +163,8 @@ VARIABLES.SOIL.rhosn = 1000;
 VARIABLES.SOIL.volice = zeros(nl_soil,1);
 VARIABLES.SOIL.snow_tcount = 0;
 VARIABLES.SOIL.volliqli = volliqliinit ;   % Initial value of litter soil moisture
+
+
 
 VARIABLES.CANOPY.Sh2o_can_prev = 0;
 

@@ -141,7 +141,7 @@ for i=1:1:length(vecf)
              %psicom=(Am+CC+KKrsol1)^(-1)*(GG+KK+CC*psiant-(1/dtime)*(thetaant-thetai)+KKrsol2);                  
              psicom=(Am+CC+KKrsol1+CC_Ss)\(GG+KK+CC*psiant+CC_Ss*psii-(1/dtime)*(thetaant-thetai)+KKrsol2);
              if psicom(1) > 0
-                stop =10 
+                stop =10 ;
              end
              % Dongkook - End
              
