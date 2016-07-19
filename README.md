@@ -1,5 +1,5 @@
 ### Model description
-MLCanFace (Version 2.0): The Windows version of the model is also fully exposed through the collaborative environment under MLCanFace_Windows 
+MLCan 2.0: The Windows version of the model is also fully exposed through the collaborative environment under MLCanFace_Windows 
 
 
 ### Documentation
