@@ -22,6 +22,12 @@ Matlab
 
 ### Reference
 **Primary reference**
+Drewry, D.T., P. Kumar, S. Long, C. Bernachi, X-Z. Liang, and M. Sivapalan (2010a), Ecohydrological responses of dense canopies to environmental variability part 1: Interplay between vertical structure and photosynthetic pathway, J. Geophys. Res. Biogeosciences, 115, G04022, doi:10.1029/2010JG001340.
+
+Drewry, D.T., P. Kumar, S. Long, C. Bernachi, X-Z. Liang, and M. Sivapalan (2010b), Ecohydrological responses of dense canopies to environmental variability part 2: Role of acclimation under elevated CO2, J. Geophys. Res. Biogeosciences, 115, G04023, doi:10.1029/2010JG001341.
+
+
+
 
 **Secondary reference**
 
