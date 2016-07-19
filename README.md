@@ -1,5 +1,5 @@
 ### Model description
-MLCan 2.0: The Windows version of the model is also fully exposed through the collaborative environment under MLCanFace_Windows 
+MLCan 2.0: The Windows version of the model is also fully exposed through the collaborative environment
 
 
 ### Documentation
@@ -19,6 +19,12 @@ Matlab
 (Remember to create your working folders inside the MLCanFace_xxx folder)
 
 [Please read the "About" page from the Help Menu on important details regarding use and citation of the model]
+
+### Reference
+**Primary reference**
+
+**Secondary reference**
+
 
 
 ### License
