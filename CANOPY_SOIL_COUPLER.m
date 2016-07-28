@@ -135,11 +135,11 @@ VARIABLES.SOIL.smp = VERTSTRUC.psi0 .* (VARIABLES.SOIL.volliq ./ VERTSTRUC.porsl
 % Message box for soil moisture
 if sum(volliqinit>=porsl) > 0
     msgbox({'Initial soil moisture is higher than saturated soil moisture!', 'Solution: Modify initilal soil moisture or Increase % of sand.'},'error');
-    break;
+    error('Initial soil moisture is higher than saturated soil moisture!')
 end
 if sum(volliqinit<=theta_dry) > 0
     msgbox({'Initial soil moisture is lower than residual soil moisture!', 'Solution: Modify initilal soil moisture or Increase % of sand.'},'error');
-    break;
+    error('Initial soil moisture is lower than residual soil moisture!')
 end
 
 % Initialize snow moisture variables
