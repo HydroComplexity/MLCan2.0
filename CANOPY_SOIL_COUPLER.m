@@ -74,6 +74,12 @@ elseif (kspecies == 3)
     roottr(:,2) = dat_root2(:,2);
     count_nl_root2=dat_root2(:,2);
     count_nl_root2(1)=1;
+    nl_root(2) = sum(count_nl_root2 ~= 0);
+    rootfr(:,3) = dat_root3(:,2);
+    roottr(:,3) = dat_root3(:,2);
+    count_nl_root3=dat_root3(:,2);
+    count_nl_root3(1)=1;
+    nl_root(3) = sum(count_nl_root3 ~= 0);
 elseif (kspecies == 4)
     rootfr(:,1) = dat_root1(:,2);
     roottr(:,1) = dat_root1(:,2);
