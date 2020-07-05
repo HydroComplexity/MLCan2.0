@@ -1,5 +1,8 @@
 datasets for Lee, Kumar, Barron-Gafford, et al, WRR 2018
 
+AZ_SRM_MLCanConfig2015.mat: configuration file to set up for Santa Rita Mesquite (SRM) site before running Multi-layer canopy (MLCan) model. Configuration file includes soil & radiation parameters (% of sand, % of clay, reflection coefficient, etc), respiration & microenvironment parameters (Ro, Q10), leaf & canopy parameters (leaf width, canopy height, fluc tower height, etc), and photosynthesis parameters (Vcmac, Jmax, Rd25, etc). Use this configuration file to run MLCan to generate results published in Lee, Kumar, Barron-Gafford, et al, WRR 2018. 
+
+AZ_SRM_MLCanForcing2015.mat: forcing file for Santa Rita Mesquite (SRM) site to run Multi-layer canopy (MLCan) model. Forcing file includes leaf area indices of coexisting plants, leaf area density over the canopy, etc. Use this forcing file to run MLCan to generate results published in Lee, Kumar, Barron-Gafford, et al, WRR 2018. 
 
 AZ_SRM_MLCanForcing2015.xlsx: forcing file for Santa Rita Mesquite (SRM) site to run Multi-layer canopy (MLCan) model. Forcing file includes leaf area indices of coexisting plants, leaf area density over the canopy, etc.
 
