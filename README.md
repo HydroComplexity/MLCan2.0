@@ -2,10 +2,6 @@
 MLCan 2.0: The Windows version of the model is also fully exposed through the collaborative environment
 
 
-### Documentation
-Book captors in preparation
-
-
 ### Software required
 Matlab
 
