@@ -1,0 +1,20 @@
+README
+
+Software required: Matlab.
+
+Description: This folder contains the project and the forcing files used for MLCan model. The files are set up for 
+Goose Creek Flux Tower (GCFT) from 23 April 2016 to 15 April 2019. Each year independently. 
+
+Use these forcing files to generate simulated results for Maize and Soybean, C_m and C_s respectively, in Equations 7 - 9
+in the reference publication. 
+
+
+Additional data included in this folder: 
+
+"Analysis" folder provides the additional data needed to estimate the results shown in the reference publication, as follows:
+
+Obsfluxes.mat: Observed tower fluxes from April 23, 2016, to April 15, 2019. η in Equations 8 & 9.
+Weights.mat: Weighted contribution of momentum flux for maize and soybean, φ_m and φ_s in Equations 5 - 9.
+
+Reference: Hernandez Rodriguez et al (2020) (Under review). Inside the flux footprint: Understanding the role of organized 
+land cover heterogeneity on land-atmospheric fluxes. Water Resources Research, 2020. 
